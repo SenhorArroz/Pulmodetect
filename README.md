@@ -78,10 +78,10 @@ npm run dev
 
 # Resultados e Demonstração
 
-Interface inicial
+ * Interface inicial
 <img width="1137" height="935" alt="Image" src="https://github.com/user-attachments/assets/0aced499-b7b2-442f-b167-7bac1bd0469c" />
 
-Interface de upload de imagem
+ * Interface de upload de imagem
 <img width="1032" height="654" alt="Image" src="https://github.com/user-attachments/assets/80efcd26-b262-4520-810c-61c884ccf71d" />
 
 <img width="1027" height="646" alt="Image" src="https://github.com/user-attachments/assets/1ba0aef5-5310-4dc3-b09f-675abe4f0fa2" />
@@ -92,5 +92,3 @@ Interface de upload de imagem
   * [Dataset original](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
   * [Curso Next.js](https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft)
   * [Curso FastAPI](https://www.youtube.com/watch?v=HJ314MNcCck)
-```
-
