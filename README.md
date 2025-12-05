@@ -47,7 +47,6 @@ cd frontend
 
 # Instale as dependências
 npm install
-````
 
 #configurando e treinando o modelo: 
 #volte para backend
@@ -76,8 +75,9 @@ npm run dev
   * `backend/`: scripts de processamento.
   * `frontend/`: interface do usuário.
   * `model/`: modelo treinado.
+```
 
-## Resultados e Demonstração
+# Resultados e Demonstração
 
 Interface inicial
 <img width="1137" height="935" alt="Image" src="https://github.com/user-attachments/assets/0aced499-b7b2-442f-b167-7bac1bd0469c" />
@@ -87,9 +87,12 @@ Interface de upload de imagem
 
 <img width="1027" height="646" alt="Image" src="https://github.com/user-attachments/assets/1ba0aef5-5310-4dc3-b09f-675abe4f0fa2" />
 
+```
+
 ## Referências
 
   * [Dataset original](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
   * [Curso Next.js](https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft)
   * [Curso FastAPI](https://www.youtube.com/watch?v=HJ314MNcCck)
+```
 
