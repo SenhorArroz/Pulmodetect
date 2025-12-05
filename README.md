@@ -75,7 +75,6 @@ npm run dev
   * `backend/`: scripts de processamento.
   * `frontend/`: interface do usuário.
   * `model/`: modelo treinado.
-```
 
 # Resultados e Demonstração
 
@@ -87,7 +86,6 @@ Interface de upload de imagem
 
 <img width="1027" height="646" alt="Image" src="https://github.com/user-attachments/assets/1ba0aef5-5310-4dc3-b09f-675abe4f0fa2" />
 
-```
 
 ## Referências
 
