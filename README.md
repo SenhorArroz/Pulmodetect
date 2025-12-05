@@ -1,9 +1,9 @@
-# [Nome do Projeto]
+# [Pulmodetect]
 
 **Disciplina:** Introdução à Inteligência Artificial  
 **Semestre:** 2025.2  
 **Professor:** André Luis Fonseca Faustino
-**Turma:** [T03 / T04]
+**Turma:** T04
 
 ## Integrantes do Grupo
 * Lucas Gabriel Mendes da Silva (20250032082)
@@ -14,53 +14,82 @@
 Pulmodetect é um projeto que visa a detecção de pneumonia em imagens de raios-X utilizando Deep Learning. Foi idealizado, inicalmente com o intuito de auxiliar médicos e profissionais de saúde a realizar diagnósticos mais precisos e rápidos. Além, também, do maior estudo e interesse na área de Inteligência Artificial e de biotecnologia.
 
 ## Guia de Instalação e Execução
-Aqui, o modelo já está treinado e salvo em ~/backend/model/pneumonia_detection_model.h5. Mas, se quiser maior e melhor treinamento, basta abrir train_model.py, mudar a quantidade de Epochs e executar ao seu favor.
+Deverá, de início, instalar o pyenv, que é um gerenciador de versões do Python. Adiante, deverá instalar o Python 3.11.9. Depois, deverá instalar o Node.js na pasta frontend. Daí, treinar o modelo, que está na pasta backend; e, por fim, iniciar o servidor local.
 
 ### 1. Instalação das Dependências
-Certifique-se de ter o **Python 3.x** instalado. Clone o repositório e instale as bibliotecas listadas no `requirements.txt`:
+Certifique-se de ter o **Python 3.11.9** instalado. Clone o repositório e instale as bibliotecas listadas no `requirements.txt`:
+Certifique-se de ter o **Node.js** instalado.
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/usuario/nome-do-repo.git](https://github.com/usuario/nome-do-repo.git)
+git clone https://github.com/SenhorArroz/Pulmodetect.git
 
 # Entre na pasta do projeto
-cd nome-do-repo
+cd Pulmodetect
 
 # entre no backend
 cd backend
 
 # Crie e ative o ambiente virtual
 python -m venv venv
+venv\Scripts\activate
+
+# vá no backend/venv/pyvenv.confi
+# mude o python para 3.11.9
+# se não tiver, instale o python 3.11.9 e mude o diretório no pyvenv.conf para o executável do python
 
 # Instale as dependências
 pip install -r requirements.txt
+
+#vá para o frontend
+cd ..
+cd frontend
+
+# Instale as dependências
+npm install
 ````
+
+#configurando e treinando o modelo: 
+#volte para backend
+cd ..
+cd backend
+
+#execute o treinamento
+python train_model.py
 
 ### 2. Como Executar
 
 Execute o comando abaixo no terminal para iniciar o servidor local:
 
-```bash
-# Exemplo para Streamlit
-streamlit run src/app.py
-```
+# em backend: 
+cd backend
+python main.py
 
-Se necessário, especifique a porta ou url de acesso, ex: http://localhost:8501
+# em frontend:
+cd frontend
+npm run dev
+
+```
 
 ## Estrutura dos Arquivos
 
-[Descreva brevemente a organização das pastas]
-
-  * `src/`: Código-fonte da aplicação ou scripts de processamento.
-  * `notebooks/`: Análises exploratórias, testes e prototipagem.
-  * `data/`: Datasets utilizados (se o tamanho permitir o upload).
-  * `assets/`: Imagens, logos ou gráficos de resultados.
+  * `backend/`: scripts de processamento.
+  * `frontend/`: interface do usuário.
+  * `model/`: modelo treinado.
 
 ## Resultados e Demonstração
 
-[Adicione prints da aplicação em execução ou gráficos com os resultados do modelo/agente. Se for uma aplicação Web, coloque um print da interface.]
+Interface inicial
+<img width="1137" height="935" alt="Image" src="https://github.com/user-attachments/assets/0aced499-b7b2-442f-b167-7bac1bd0469c" />
+
+Interface de upload de imagem
+<img width="1032" height="654" alt="Image" src="https://github.com/user-attachments/assets/80efcd26-b262-4520-810c-61c884ccf71d" />
+
+<img width="1027" height="646" alt="Image" src="https://github.com/user-attachments/assets/1ba0aef5-5310-4dc3-b09f-675abe4f0fa2" />
 
 ## Referências
 
-  * [Link para o Dataset original]
-  * [Artigo, Documentação ou Tutorial utilizado como base]
+  * [Dataset original](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+  * [Curso Next.js](https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft)
+  * [Curso FastAPI](https://www.youtube.com/watch?v=HJ314MNcCck)
+
