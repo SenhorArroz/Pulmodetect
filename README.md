@@ -92,3 +92,4 @@ npm run dev
   * [Dataset original](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
   * [Curso Next.js](https://www.youtube.com/watch?v=XHrbg2iYNCg&list=PLnDvRpP8BnezfJcfiClWskFOLODeqI_Ft)
   * [Curso FastAPI](https://www.youtube.com/watch?v=HJ314MNcCck)
+  * [Curso Tensorflow + Keras](https://www.youtube.com/watch?v=7MItgjXU3_E)
